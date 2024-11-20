@@ -4,49 +4,88 @@
     <title>Card</title>
     <link rel="stylesheet" href="card_style.css">
     <style>
+        img{
+            width: 100%;
+            height: 100%;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        div#text{
+            display: grid;
+            
+            grid-template-rows: 50% ;
+            grid-template-columns: 50% ;
+
+            margin-left: 50px;
+            width: 45%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        div#base{
+            width: 900px;
+            height: 500px;
+            padding: 30px;
+            border: 12px solid black;
+            background-color: aqua;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: 50% 50% ;
+            grid-template-columns: 50% 50% ;
+          }
+        
+        #red{
+            background-color: brown;
+        }
     </style>
   </head>
   <body>
     <a href="index.html">Home</a>
-    <div>
-        <img src="Star-Wars-Man/Site1/200px-Wayne_by_Shuravf.jpg"/>
-        <div>
-            <h1>WANE</h1>
-        </div>
-        <div>
-            <h2>SNEEKY BOI</h2>
-        </div>
-        <div>
-            <h4>IF YOU ARE BURNING...</h4>
-            <div>
-                <h3>BEND ALOY</h3>
-            </div>
-            <div id="circle"></div>
-            <div>
-                <h3>I</h3>
+    <div id="base" class="grid-container">
+        <img src="https://uploads.coppermind.net/thumb/Wayne_by_Shuravf.jpg/200px-Wayne_by_Shuravf.jpg"/>
+        <div id="text">
+            <div id="red">
+                <h1>WANE</h1>
             </div>
             <div>
-                <h3>2</h3>
-            </div>
-        </div>
-        <div>
-            <h3>ONCE PER TURN</h3>
-            <p>When you buy a card you may resolve its top effect immediately, then eliminate it.</p>
-            <div>
-                <h3>II</h3>
-            </div>
-        </div>
-        <div>
-            <h4>IF YOU ARE BURNING...</h4>
-            <div>
-                <h3>ATIUM</h3>
-            </div>
-            <div id="circle"></div>
-            <div>
-                <h3>I</h3>
+                <h2>SNEEKY BOI</h2>
             </div>
             <div>
-                <h3>3</h3>
+                <h4>IF YOU ARE BURNING...</h4>
+                <div>
+                    <h3>BEND ALOY</h3>
+                </div>
+                <div id="circle"></div>
+                <div>
+                    <h3>I</h3>
+                </div>
+                <div>
+                    <h3>2</h3>
+                </div>
+            </div>
+            <div>
+                <h3>ONCE PER TURN</h3>
+                <p>When you buy a card you may resolve its top effect immediately, then eliminate it.</p>
+                <div>
+                    <h3>II</h3>
+                </div>
+            </div>
+            <div>
+                <h4>IF YOU ARE BURNING...</h4>
+                <div>
+                    <h3>ATIUM</h3>
+                </div>
+                <div id="circle"></div>
+                <div>
+                    <h3>I</h3>
+                </div>
+                <div>
+                    <h3>3</h3>
+                </div>
             </div>
         </div>
     </div>

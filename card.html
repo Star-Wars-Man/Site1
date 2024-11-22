@@ -9,10 +9,10 @@
             height: 100%;
             
         }
-        div#text{
+        div#info{
             display: grid;
-            grid-template-rows: 50% ;
-            grid-template-columns: 60% 50% 33% ;
+            grid-template-rows: 10% 5% 28.5% 28% 28.5% ;
+            grid-template-columns: 10% 45% 45%  ;
             grid-column-start: 2;
             grid-column-end: 2;
             margin-left: 50px;
@@ -29,10 +29,16 @@
             grid-template-columns: 50% 50% ;
             background-color: aqua;
         }
-        div
-        
-        #red{
-            background-color: brown;
+        div#name{
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: span 3;
+
+        }
+        div#title{
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: span 3;
         }
     </style>
   </head>
@@ -40,8 +46,8 @@
     <a href="index.html">Home</a>
     <div id="base">
         <img id="picture" src="https://uploads.coppermind.net/thumb/Wayne_by_Shuravf.jpg/200px-Wayne_by_Shuravf.jpg"/>
-        <div id="text">
-            <div id="red">
+        <div id="info">
+            <div id="name">
                 <h1 class="name">WANE</h1>
             </div>
             <div>

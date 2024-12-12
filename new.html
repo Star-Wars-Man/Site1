@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    #page {
+
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    #base1 {
+      width: 700px;
+      height: 400px;
+      display: grid;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 100%;
+      background-color: #ffffff;
+      border: 10px solid black;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #base2 {
+      width: 700px;
+      height: 400px;
+      display: grid;
+      grid-row-start: 1;
+      grid-column-start: 3;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 100%;
+      background-color: #ffffff;
+      border: 10px solid black;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #base3 {
+      width:700px;
+      height: 400px;
+      display: grid;
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 100%;
+      background-color: #ffffff;
+      border: 10px solid black;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    #picture {
+      width: 100%;
+      height: auto;
+      border: 2px solid black;
+    }
+
+    #info {
+      display: grid;
+      grid-template-rows: 15% 10% 20% 25% 20%;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    #name h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    #title h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      color: gray;
+    }
+
+    #opt_1, #opt_2, #opt_3 {
+      border: 2px solid black;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+      align-items: center;
+      text-align: center;
+    }
+
+    #opt_1 h3, #opt_2 h3, #opt_3 h3 {
+      margin: 0;
+    }
+
+    #opt_1 h4, #opt_3 h4 {
+      margin: 0;
+      grid-column: span 3;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    #opt_2 {
+      grid-template-rows: 1fr auto;
+      grid-template-columns: 20% 80%;
+    }
+
+    #opt_2 h3 {
+      margin: 0;
+      grid-column: 1 / span 2;
+    }
+
+
+    #opt_2 p {
+      grid-column: 2;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <div id="base1">
+      <!-- Image Section -->
+      <img id="picture" src="https://uploads.coppermind.net/thumb/Wayne_by_Shuravf.jpg/200px-Wayne_by_Shuravf.jpg" alt="Character">
+
+      <!-- Info Section -->
+      <div id="info">
+        <!-- Name -->
+        <div id="name">
+          <h1>WAYNE</h1>
+        </div>
+
+        <!-- Title -->
+        <div id="title">
+          <h2>SNEEKY BOI</h2>
+        </div>
+
+        <!-- Option 1 -->
+        <div id="opt_1">
+          <h4>IF YOU ARE BURNING...</h4>
+          <h3>BEND ALOY</h3>
+          <h3>I</h3>
+          <h3>2</h3>
+        </div>
+
+        <!-- Option 2 -->
+        <div id="opt_2">
+          <h3>ONCE PER TURN</h3>
+          <h3>II</h3>
+          <p>When you buy a card you may resolve its top effect immediately, then eliminate it.</p>
+        </div>
+
+        <!-- Option 3 -->
+        <div id="opt_3">
+          <h4>IF YOU ARE BURNING...</h4>
+          <h3>ATIUM</h3>
+          <h3>III</h3>
+          <h3>3</h3>
+        </div>
+      </div>
+    </div>
+    <div id="base2">
+      <!-- Image Section -->
+      <img id="picture" src="https://uploads.coppermind.net/thumb/Wayne_by_Shuravf.jpg/200px-Wayne_by_Shuravf.jpg" alt="Character">
+
+      <!-- Info Section -->
+      <div id="info">
+        <!-- Name -->
+        <div id="name">
+          <h1>WAYNE</h1>
+        </div>
+
+        <!-- Title -->
+        <div id="title">
+          <h2>SNEEKY BOI</h2>
+        </div>
+
+        <!-- Option 1 -->
+        <div id="opt_1">
+          <h4>IF YOU ARE BURNING...</h4>
+          <h3>BEND ALOY</h3>
+          <h3>I</h3>
+          <h3>2</h3>
+        </div>
+
+        <!-- Option 2 -->
+        <div id="opt_2">
+          <h3>ONCE PER TURN</h3>
+          <h3>II</h3>
+          <p>When you buy a card you may resolve its top effect immediately, then eliminate it.</p>
+        </div>
+
+        <!-- Option 3 -->
+        <div id="opt_3">
+          <h4>IF YOU ARE BURNING...</h4>
+          <h3>ATIUM</h3>
+          <h3>III</h3>
+          <h3>3</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="base3">
+      <!-- Image Section -->
+      <img id="picture" src="https://uploads.coppermind.net/thumb/Wayne_by_Shuravf.jpg/200px-Wayne_by_Shuravf.jpg" alt="Character">
+
+      <!-- Info Section -->
+      <div id="info">
+        <!-- Name -->
+        <div id="name">
+          <h1>WAYNE</h1>
+        </div>
+
+        <!-- Title -->
+        <div id="title">
+          <h2>SNEEKY BOI</h2>
+        </div>
+
+        <!-- Option 1 -->
+        <div id="opt_1">
+          <h4>IF YOU ARE BURNING...</h4>
+          <h3>BEND ALOY</h3>
+          <h3>I</h3>
+          <h3>2</h3>
+        </div>
+
+        <!-- Option 2 -->
+        <div id="opt_2">
+          <h3>ONCE PER TURN</h3>
+          <h3>II</h3>
+          <p>When you buy a card you may resolve its top effect immediately, then eliminate it.</p>
+        </div>
+
+        <!-- Option 3 -->
+        <div id="opt_3">
+          <h4>IF YOU ARE BURNING...</h4>
+          <h3>ATIUM</h3>
+          <h3>III</h3>
+          <h3>3</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

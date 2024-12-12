@@ -17,10 +17,26 @@
     }
 
     #page {
-
       display: grid;
-      grid-template-rows: 50% 50%;
-      grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 27.5% 17.5% 10% 17.5 27.5%;
+    justify-content: center;
+    justify-items: end;
+    align-content: center;
+    align-items: center;
+    }
+
+    div#back{
+      display: grid;
+      grid-row-start: 1;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      padding: 8px;
+      border: 6px solid black;
+      background-color: red;
+    }
+    a#back{
+      color: black;
     }
 
     #base1 {
@@ -41,26 +57,29 @@
 
     #base2 {
       width: 700px;
-      height: 400px;
-      margin: 10px;
-      display: grid;
-      grid-row-start: 1;
-      grid-column-start: 3;
-      grid-template-columns: 40% 60%;
-      grid-template-rows: 100%;
-      background-color: #ffffff;
-      border: 10px solid black;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    margin: 10px;
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    background-color: #ffffff;
+    border: 10px solid black;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-items: center;
     }
 
     #base3 {
-      width:700px;
+      width: 700px;
       height: 400px;
       margin: 10px;
       display: grid;
       grid-row-start: 2;
-      grid-column-start: 2;
+      grid-column-start: 5;
+      grid-column-end: 2;
       grid-template-columns: 40% 60%;
       grid-template-rows: 100%;
       background-color: #ffffff;
@@ -153,7 +172,7 @@
         <!-- Option 1 -->
         <div id="opt_1">
           <h4>IF YOU ARE BURNING...</h4>
-          <h3>BEND ALOY</h3>
+          <h3>STEAL</h3>
           <h3>I</h3>
           <h3>2</h3>
         </div>
@@ -174,20 +193,25 @@
         </div>
       </div>
     </div>
+
+    <div id="back">
+      <a id="back" href="index.html">Back</a>
+    </div>
+
     <div id="base2">
       <!-- Image Section -->
-      <img id="picture" src="https://uploads.coppermind.net/thumb/Wayne_by_Shuravf.jpg/200px-Wayne_by_Shuravf.jpg" alt="Character">
+      <img id="picture" src="image.png" alt="Character">
 
       <!-- Info Section -->
       <div id="info">
         <!-- Name -->
         <div id="name">
-          <h1>WAYNE</h1>
+          <h1>WAX</h1>
         </div>
 
         <!-- Title -->
         <div id="title">
-          <h2>SNEEKY BOI</h2>
+          <h2>EXPLODY BOI</h2>
         </div>
 
         <!-- Option 1 -->
